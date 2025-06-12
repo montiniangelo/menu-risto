@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #fdfdfd;
+  color: #333;
+  padding: 0 1rem;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  background: linear-gradient(to right, #8e0000, #b30000);
+  color: white;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-style: italic;
+  font-size: 1.2rem;
+}
+.menu {
+  max-width: 700px;
+  margin: 3rem auto;
+}
+.portata {
+  opacity: 0;
+  transform: translateY(30px);
+  background: #fff;
+  border-left: 5px solid #8e0000;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  transition: all 0.6s ease-out;
+}
+.portata h2 {
+  margin: 0 0 0.3rem;
+  color: #8e0000;
+  font-size: 1.4rem;
+}
+.portata p {
+  margin: 0;
+  color: #555;
+}
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  background-color: #eee;
+  color: #555;
+}
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  .portata h2 {
+    font-size: 1.2rem;
+  }
+}

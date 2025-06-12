@@ -1,13 +1,51 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Montini Rentals</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Meta -->
+  <meta name="description" content="Scopri il nostro menu degustazione da 10 portate al Hakuna Matata Beach Bar, Lido di Ostia. Prenota un’esperienza gourmet sulla spiaggia!" />
+  <meta property="og:title" content="Menu Degustazione – Hakuna Matata Beach Bar" />
+  <meta property="og:description" content="Un percorso gourmet in 10 portate al mare: vieni a vivere la nostra cucina." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://tuodominio.pages.dev/assets/preview.jpg" />
+  <meta property="og:url" content="https://tuodominio.pages.dev" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <title>Menu Degustazione – Hakuna Matata Beach Bar</title>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <h1>Menu Degustazione</h1>
+    <p>10 portate per un’esperienza gourmet al mare</p>
+  </header>
+
+  <main>
+    <section class="menu">
+      <article class="portata" data-aos="fade-up" data-aos-delay="100"><h2>1. Carpaccio di mare</h2><p>Pesce crudo, agrumi e pepe rosa</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="200"><h2>2. Flan di parmigiano</h2><p>Con riduzione di balsamico</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="300"><h2>3. Gamberi croccanti</h2><p>Su crema di piselli e menta</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="400"><h2>4. Risotto al tartufo</h2><p>Mantecato con burro chiarificato</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="500"><h2>5. Raviolo ripieno</h2><p>Ricotta di bufala e limone</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="600"><h2>6. Filetto di manzo</h2><p>Con patate affumicate</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="700"><h2>7. Pre-dessert</h2><p>Sorbetto al basilico</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="800"><h2>8. Dolce della casa</h2><p>Cioccolato e frutti rossi</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="900"><h2>9. Piccola pasticceria</h2><p>Assaggio di tre mignon</p></article>
+      <article class="portata" data-aos="fade-up" data-aos-delay="1000"><h2>10. Caffè selezionato</h2><p>Miscela 100% arabica</p></article>
+    </section>
+  </main>
+
+  <footer data-aos="fade-up">
+    <p>📍 Hakuna Matata Beach Bar – Piazza dei Canotti, 00122 Lido di Ostia (RM)</p>
+    <p>📞 349 316 4296</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
 </html>
