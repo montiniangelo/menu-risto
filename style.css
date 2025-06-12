@@ -84,6 +84,17 @@ footer {
   color: #333;
 }
 
+footer a {
+  color: var(--mare);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: var(--corallo);
+}
+
 footer .credits {
   margin-top: 0.4rem;
   font-size: 0.85rem;
@@ -102,7 +113,7 @@ footer .credits a:hover {
 .credits-out {
   text-align: center;
   margin: 2rem 0;
-  font-size: 0.85rem;
+  font-size: 0.5rem;
   color: #666;
 }
 
