@@ -1,60 +1,121 @@
+
+:root {
+  --mare: #008080;
+  --sabbia: #fef9f0;
+  --acqua: #00b4d8;
+  --corallo: #ff7b54;
+  --testo: #043c44;
+}
+
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #fdfdfd;
-  color: #333;
+  font-family: 'Quicksand', sans-serif;
+  background: var(--sabbia);
+  color: var(--testo);
   padding: 0 1rem;
 }
+
 header {
   text-align: center;
-  padding: 3rem 1rem 1rem;
-  background: linear-gradient(to right, #8e0000, #b30000);
+  padding: 3rem 1rem 1.5rem;
+  background: linear-gradient(to right, var(--mare), var(--acqua));
   color: white;
 }
+
 header h1 {
-  font-size: 2.5rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
   margin-bottom: 0.5rem;
 }
+
 header p {
   font-style: italic;
   font-size: 1.2rem;
 }
+
 .menu {
-  max-width: 700px;
+  max-width: 800px;
   margin: 3rem auto;
 }
+
 .portata {
   opacity: 0;
   transform: translateY(30px);
-  background: #fff;
-  border-left: 5px solid #8e0000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  border-left: 5px solid var(--mare);
   padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 6px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   transition: all 0.6s ease-out;
 }
+
+.piatto {
+  max-width: 70%;
+}
+
 .portata h2 {
-  margin: 0 0 0.3rem;
-  color: #8e0000;
-  font-size: 1.4rem;
-}
-.portata p {
   margin: 0;
-  color: #555;
+  font-size: 1.3rem;
+  color: var(--mare);
 }
+
+.portata p {
+  margin: 0.2rem 0 0;
+  color: #444;
+}
+
+.prezzo {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--corallo);
+  text-align: right;
+  min-width: 60px;
+}
+
 footer {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
-  background-color: #eee;
-  color: #555;
+  background-color: #eaf6f6;
+  color: #333;
 }
+
+footer .credits {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+footer .credits a {
+  color: var(--mare);
+  text-decoration: none;
+}
+
+footer .credits a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
 @media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 2rem;
+  .portata {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .portata h2 {
-    font-size: 1.2rem;
+
+  .piatto {
+    max-width: 100%;
+  }
+
+  .prezzo {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 2.4rem;
   }
 }
