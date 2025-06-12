@@ -99,6 +99,23 @@ footer .credits a:hover {
   text-decoration: underline;
 }
 
+.credits-out {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.credits-out a {
+  color: var(--mare);
+  text-decoration: none;
+}
+
+.credits-out a:hover {
+  text-decoration: underline;
+}
+
+
 /* Responsive */
 @media screen and (max-width: 600px) {
   .portata {
