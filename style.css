@@ -183,6 +183,39 @@ td.prezzo, th.prezzo {
   width: 20%;
 }
 
+.tabella-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-tabella {
+  min-width: 600px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.menu-tabella th,
+.menu-tabella td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.menu-tabella td:first-child {
+  text-align: left;
+}
+
+.menu-tabella td:nth-child(2) {
+  text-align: center;
+}
+
+.menu-tabella td.prezzo,
+.menu-tabella th.prezzo {
+  text-align: right;
+  font-weight: bold;
+  color: #222;
+  font-size: 1.1rem;
+}
 
 /* Responsive */
 @media screen and (max-width: 600px) {
