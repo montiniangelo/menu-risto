@@ -150,6 +150,39 @@ td.prezzo, th.prezzo {
   font-size: 1.1rem;
 }
 
+.menu-tabella {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.menu-tabella th,
+.menu-tabella td {
+  padding: 0.75rem 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-tabella td:first-child {
+  text-align: left;
+  width: 60%;
+}
+
+.menu-tabella td:nth-child(2) {
+  text-align: center;
+  width: 20%;
+}
+
+.menu-tabella td.prezzo,
+.menu-tabella th.prezzo {
+  text-align: right;
+  font-weight: bold;
+  color: #222;
+  font-size: 1.1rem;
+  width: 20%;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 600px) {
