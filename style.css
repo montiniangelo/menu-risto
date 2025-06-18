@@ -143,6 +143,13 @@ footer .credits a:hover {
   font-weight: 700;
 }
 
+td.prezzo, th.prezzo {
+  color: #222;
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.1rem;
+}
+
 
 /* Responsive */
 @media screen and (max-width: 600px) {
