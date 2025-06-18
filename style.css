@@ -125,6 +125,23 @@ footer .credits a:hover {
 .credits-out a:hover {
   text-decoration: underline;
 }
+.menu-tabella {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.menu-tabella th,
+.menu-tabella td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.menu-tabella th {
+  font-weight: 700;
+}
 
 
 /* Responsive */
