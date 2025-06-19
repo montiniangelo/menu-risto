@@ -17,43 +17,45 @@ html, body {
   padding: 0;
   width: 100%;
   overflow-x: hidden;
-}
-
-
-body {
-  margin: 0;
   font-family: 'Quicksand', sans-serif;
-  background: var(--sabbia);
+  background-color: var(--sabbia);
   color: var(--testo);
-  padding: 0 1rem;
 }
 
+/* HEADER */
 header {
   text-align: center;
-  padding: 3rem 1rem 1.5rem;
+  padding: 2rem 1rem 1rem;
   background: linear-gradient(to right, var(--mare), var(--acqua));
   color: white;
 }
 
+header img {
+  max-width: 140px;
+  margin: 0 auto 1rem;
+  display: block;
+}
+
 header h1 {
   font-family: 'Dancing Script', cursive;
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.4rem;
+  margin: 0.2rem 0;
 }
 
 header p {
+  margin: 0.2rem 0;
+  font-size: 1rem;
   font-style: italic;
-  font-size: 1.2rem;
 }
 
+/* MENU */
 .menu {
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 .portata {
-  opacity: 0;
-  transform: translateY(30px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,7 +65,6 @@ header p {
   margin-bottom: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-  transition: all 0.6s ease-out;
 }
 
 .piatto {
@@ -72,13 +73,14 @@ header p {
 
 .portata h2 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: var(--mare);
 }
 
 .portata p {
-  margin: 0.2rem 0 0;
+  margin: 0.3rem 0 0;
   color: #444;
+  font-size: 0.95rem;
 }
 
 .prezzo {
@@ -89,6 +91,50 @@ header p {
   min-width: 60px;
 }
 
+/* TABELLA */
+.tabella-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+.menu-tabella {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-family: 'Quicksand', sans-serif;
+  table-layout: fixed;
+}
+
+.menu-tabella th,
+.menu-tabella td {
+  padding: 0.75rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.menu-tabella th {
+  font-weight: 700;
+  background-color: #fff;
+}
+
+.menu-tabella td:first-child {
+  width: 60%;
+}
+
+.menu-tabella td:nth-child(2),
+.menu-tabella td:nth-child(3),
+.menu-tabella th.prezzo,
+.menu-tabella td.prezzo {
+  text-align: right;
+  font-weight: bold;
+  color: #222;
+  font-size: 1.1rem;
+  width: 20%;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -108,25 +154,10 @@ footer a:hover {
   color: var(--corallo);
 }
 
-footer .credits {
-  margin-top: 0.4rem;
-  font-size: 0.85rem;
-  color: #666;
-}
-
-footer .credits a {
-  color: var(--mare);
-  text-decoration: none;
-}
-
-footer .credits a:hover {
-  text-decoration: underline;
-}
-
 .credits-out {
   text-align: center;
-  margin: 2rem 0;
-  font-size: 0.5rem;
+  margin: 1rem 0 2rem;
+  font-size: 0.75rem;
   color: #666;
 }
 
@@ -138,106 +169,13 @@ footer .credits a:hover {
 .credits-out a:hover {
   text-decoration: underline;
 }
-.menu-tabella {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
 
-.menu-tabella th,
-.menu-tabella td {
-  padding: 0.75rem;
-  text-align: left;
-  border-bottom: 1px solid #ddd;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.menu-tabella th {
-  font-weight: 700;
-}
-
-td.prezzo, th.prezzo {
-  color: #222;
-  font-weight: bold;
-  text-align: right;
-  font-size: 1.1rem;
-}
-
-.menu-tabella {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-.menu-tabella th,
-.menu-tabella td {
-  padding: 0.75rem 0;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 1rem;
-  border-bottom: 1px solid #ddd;
-}
-
-.menu-tabella td:first-child {
-  text-align: left;
-  width: 60%;
-}
-
-.menu-tabella td:nth-child(2) {
-  text-align: center;
-  width: 20%;
-}
-
-.menu-tabella td.prezzo,
-.menu-tabella th.prezzo {
-  text-align: right;
-  font-weight: bold;
-  color: #222;
-  font-size: 1.1rem;
-  width: 20%;
-}
-
-.tabella-scroll {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-.menu-tabella {
-  min-width: 600px;
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.menu-tabella th,
-.menu-tabella td {
-  padding: 0.75rem 0.5rem;
-  border-bottom: 1px solid #ddd;
-  font-family: 'Quicksand', sans-serif;
-}
-
-.menu-tabella td:first-child {
-  text-align: left;
-}
-
-.menu-tabella td:nth-child(2) {
-  text-align: center;
-}
-
-.menu-tabella td.prezzo,
-.menu-tabella th.prezzo {
-  text-align: right;
-  font-weight: bold;
-  color: #222;
-  font-size: 1.1rem;
-}
-
-.tabella-scroll {
-  overflow-x: auto;
-  max-width: 100%;
-}
-
-
-/* Responsive */
+/* RESPONSIVE */
 @media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
   .portata {
     flex-direction: column;
     align-items: flex-start;
@@ -248,11 +186,17 @@ td.prezzo, th.prezzo {
   }
 
   .prezzo {
-    align-self: flex-end;
     margin-top: 0.5rem;
+    align-self: flex-end;
   }
 
-  header h1 {
-    font-size: 2.4rem;
+  .menu-tabella {
+    font-size: 0.95rem;
+    min-width: 100%;
+  }
+
+  .menu-tabella th,
+  .menu-tabella td {
+    padding: 0.5rem;
   }
 }
